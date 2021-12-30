@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://fylo-landing-page-sandy.vercel.app/)
+- Live Site URL: [Add live site URL here](https://fylo-landing-page-sandy.vercel.app/)
 
 ## My process
 
@@ -57,6 +57,10 @@ I learnt how to use react-reveal animations. It's really cool.
 ### Continued development
 
 What next after this project? Well, it's to keep building more projects on Frontend Mentor and also learning new things along the way.
+
+### Useful Resources
+
+- [Example resource 1](https://www.example.com) - I used this as a guide while setting up styled-components in Next JS. I Recommend this to anyone finding it difficult setting up styled-components in Next JS.
 
 ## Author
 
