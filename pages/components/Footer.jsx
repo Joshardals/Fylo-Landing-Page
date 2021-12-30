@@ -11,7 +11,7 @@ const Footer = () => {
     <Wrapper>
       <FooterContainer>
         <Bounce>
-          <LogoImg src="/Logo.svg" alt="fylo logo" />
+          <LogoImg src="/logo.svg" alt="fylo logo" />
         </Bounce>
         <FooterBody>
           <ReachMe>
@@ -52,9 +52,13 @@ const Footer = () => {
                 <NavLink href="#">Privacy</NavLink>
               </NavContainer>
               <SocialsContainer>
-                <SocialLink href="">
-                  <img src="https://img.icons8.com/material-outlined/50/ffffff/facebook-f.png" />
+                {/* <SocialLink href="">
+                  <img src="https://img.icons8.com/material-outlined/24/65e2d9/facebook-f.png" />
+                </SocialLink> */}
+                <SocialLink href="#">
+                  <SocialBg></SocialBg>
                 </SocialLink>
+                <SocialLink href="#"></SocialLink>
                 <SocialLink href="#"></SocialLink>
                 <SocialLink href="#"></SocialLink>
               </SocialsContainer>
@@ -137,10 +141,18 @@ const NavLink = tw.a`
 `;
 const SocialsContainer = tw.div`
     flex space-x-4 mt-20 items-center justify-center 
-    md:justify-start md:items-start md:mt-0
+    md:justify-start md:items-start md:mt-0 
 `;
 const SocialLink = tw.div`
-    h-8 w-8 border-[1px] border-white rounded-full flex items-center
-    justify-center
+    h-10 w-10 border-[1px] border-white rounded-full flex items-center
+    justify-center hover:border-cyan-1
+`;
+const SocialBg = styled.div`
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij4gICAgPHBhdGggZD0iTTE3LjUyNSw5SDE0VjdjMC0xLjAzMiwwLjA4NC0xLjY4MiwxLjU2My0xLjY4MmgxLjg2OHYtMy4xOEMxNi41MjIsMi4wNDQsMTUuNjA4LDEuOTk4LDE0LjY5MywyIEMxMS45OCwyLDEwLDMuNjU3LDEwLDYuNjk5VjlIN3Y0bDMtMC4wMDFWMjJoNHYtOS4wMDNsMy4wNjYtMC4wMDFMMTcuNTI1LDl6Ij48L3BhdGg+PC9zdmc+")
+    50% 50% no-repeat;
+  background-size: 100%;
 `;
 export default Footer;
