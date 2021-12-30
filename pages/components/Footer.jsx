@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import tw from "tailwind-styled-components";
 import styled from "styled-components";
 import EarlyAccess from "./EarlyAccess";
@@ -137,7 +137,7 @@ const NavContainer = tw.div`
     flex flex-col space-y-4
 `;
 const NavLink = tw.a`
-    flex
+    flex hover:font-bold transition-all
 `;
 const SocialsContainer = tw.div`
     flex space-x-4 mt-20 items-center justify-center 

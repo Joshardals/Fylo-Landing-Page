@@ -8,7 +8,7 @@ const TestimonialContainer = () => {
     <Wrapper>
       <Testimonials>
         <Roll left>
-          <Testimonial>
+          <Testimonial1>
             <p>
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
@@ -21,7 +21,7 @@ const TestimonialContainer = () => {
                 <p>Founder & CEO, Huddle.</p>
               </TestimonialText>
             </TestimonialProfile>
-          </Testimonial>
+          </Testimonial1>
         </Roll>
         <Roll botttom>
           <Testimonial>
@@ -72,20 +72,27 @@ const Testimonial = styled.div`
   border-radius: 5px;
   padding: 2rem;
   box-shadow: 5px 5px 0px 5px hsl(217, 28%, 15%);
+`;
+const Testimonial1 = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(219, 30%, 18%);
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 5px 5px 0px 5px hsl(217, 28%, 15%);
 
-  &:first-child {
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -2.5rem;
-      left: -0.5rem;
-      height: 100%;
-      width: 100%;
-      background: url("/bg-quotes.png") no-repeat;
-      z-index: -1;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    top: -2.5rem;
+    left: -0.5rem;
+    height: 100%;
+    width: 100%;
+    background: url("/bg-quotes.png") no-repeat;
+    z-index: -1;
   }
 `;
 const TestimonialProfile = tw.div`

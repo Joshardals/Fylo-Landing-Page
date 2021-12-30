@@ -60,13 +60,15 @@ const ProductBody = tw.div`
   text-left
 `;
 const ProductLink = styled.div`
-  color: hsl(176, 68%, 64%);
+  color: rgb(101, 226, 217);
   display: flex;
   align-items: center;
   width: 12rem;
   position: relative;
   right: 0;
   left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in; 
 
   &:before {
     content: "";
@@ -77,9 +79,17 @@ const ProductLink = styled.div`
     height: 1px;
     width: 92%;
     background-color: hsl(176, 68%, 64%);
+    transition: all 0.3s ease-in;
+  }
+
+  &:hover {
+    color: #ffffff; 
+    &:before {
+      background #ffffff;
+    }
   }
 `;
 const ProductLinkImg = tw.img`
-  ml-2 h-6 w-6
+  ml-2 h-6 w-6 
 `;
 export default Products;

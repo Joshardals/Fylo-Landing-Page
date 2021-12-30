@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import tw from "tailwind-styled-components";
 import styled from "styled-components";
 import Bounce from "react-reveal/Bounce";
 
 const EarlyAccess = () => {
+  const [email, setEmail] = useState(false);
   const [earlyAccess, setEarlyAccess] = useState("");
+
+  useEffect(() => {}, [earlyAccess]);
+
   return (
     <Wrapper>
       <FormContainer>
@@ -26,6 +30,11 @@ const EarlyAccess = () => {
             <Submit>Get started for free</Submit>
           </FormInputContainer>
         </Bounce>
+        {email ? (
+          <Bounce>
+            <ErrorMessage>Please enter a valid email address</ErrorMessage>
+          </Bounce>
+        ) : null}
       </FormContainer>
     </Wrapper>
   );
@@ -53,5 +62,8 @@ const EmailInput = tw.input`
 const Submit = tw.button`
     text-[14px] capitalize bg-gradient-to-r from-cyan-1 to-blue-1 w-full md:w-64 p-4 rounded-full
     cursor-pointer
+`;
+const ErrorMessage = tw.div`
+    text-left px-10 text-light-red text-[14px] 
 `;
 export default EarlyAccess;
