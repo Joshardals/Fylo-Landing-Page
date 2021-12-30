@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <Wrapper>
       <FeaturesContainer>
-        <Fade left>
+        <Fade top>
           <Feature>
             <FeatureImg
               src="/icon-access-anywhere.svg"
@@ -19,7 +19,7 @@ const Features = () => {
             </p>
           </Feature>
         </Fade>
-        <Fade right>
+        <Fade top>
           <Feature>
             <FeatureImg src="/icon-security.svg" alt="icon-security" />
             <h3>Security you can trust</h3>
@@ -43,7 +43,7 @@ const Features = () => {
             </p>
           </Feature>
         </Fade>
-        <Fade right>
+        <Fade left>
           <Feature>
             <FeatureImg src="/icon-any-file.svg" alt="any-file" />
             <h3>Store any type of file</h3>
