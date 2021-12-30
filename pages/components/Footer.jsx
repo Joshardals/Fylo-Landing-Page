@@ -4,7 +4,7 @@ import styled from "styled-components";
 import EarlyAccess from "./EarlyAccess";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Zoom"; 
 
 const Footer = () => {
   return (
@@ -39,7 +39,7 @@ const Footer = () => {
             </Fade>
           </ReachMe>
           <Zoom>
-            <About>
+          <About>
               <NavContainer>
                 <NavLink href="#">About Us</NavLink>
                 <NavLink href="#">Jobs</NavLink>
@@ -67,6 +67,11 @@ const Footer = () => {
         </FooterBody>
       </FooterContainer>
       <EarlyAccess />
+      <Author>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        <br />
+        Coded by <a href="https://www.frontendmentor.io/profile/Joshardals">Joshua Bamidele</a>.
+      </Author>
     </Wrapper>
   );
 };
@@ -104,32 +109,6 @@ const Email = tw.div`
     flex space-x-4
 `;
 const EmailImg = tw.img``;
-// const LogoAddress = tw.div`
-//     space-y-8
-// `;
-// const LogoImg = tw.img``;
-// const ReachMe = tw.div`
-//     flex
-// `;
-// const Address = tw.div`
-//     flex flex-1 space-x-6 py-7 pr-3 items-center h-full w-full
-// `;
-// const LocationImg = tw.img`
-//     h-6
-// `;
-// const Contact = tw.div`
-//     flex-1 flex flex-col justify-center space-y-6 ml-10
-// `;
-// const Phone = tw.div`
-//     flex items-center w-full space-x-6
-// `;
-// const PhoneImg = tw.img`
-//     h-6
-// `;
-// const Email = tw.div`
-//     flex w-full space-x-6
-// `;
-// const EmailImg = tw.img``;
 const About = tw.div`
     grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20 py-7 ml-2
 `;
@@ -155,4 +134,7 @@ const SocialBg = styled.div`
     50% 50% no-repeat;
   background-size: 100%;
 `;
+const Author = tw.div`
+  text-center
+`; 
 export default Footer;

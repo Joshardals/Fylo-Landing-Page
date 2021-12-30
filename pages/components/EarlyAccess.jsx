@@ -7,7 +7,14 @@ const EarlyAccess = () => {
   const [email, setEmail] = useState(false);
   const [earlyAccess, setEarlyAccess] = useState("");
 
-  useEffect(() => {}, [earlyAccess]);
+  useEffect(() => {
+    const validator = require("email-validator"); 
+    if (validator.validate(earlyAccess) == true) {
+      setEmail(false); 
+    } else {
+      setEmail(true); 
+    }
+  }, [earlyAccess]);
 
   return (
     <Wrapper>
@@ -41,7 +48,7 @@ const EarlyAccess = () => {
 };
 const Wrapper = tw.div`
     flex items-center justify-center absolute z-10 right-0 
-    left-0 top-[-15rem] md:top-[-12rem] lg:top-[-12rem] p-7 
+    left-0 top-[-15rem] md:top-[-12rem] lg:top-[-13rem] p-7 
 `;
 const FormContainer = tw.div`
     h-auto bg-dark-blue-1 text-center flex flex-col space-y-6  w-[60rem] p-10 md:px-20 md:py-10
@@ -53,7 +60,7 @@ const FormContainer = tw.div`
       w-full
     }
 `;
-const FormInputContainer = tw.div`
+const FormInputContainer = tw.form`
     flex justify-center items-center flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 
 `;
 const EmailInput = tw.input`
@@ -64,6 +71,6 @@ const Submit = tw.button`
     cursor-pointer
 `;
 const ErrorMessage = tw.div`
-    text-left px-10 text-light-red text-[14px] 
+    text-left px-10 text-light-red text-xs md:text-[14px]
 `;
 export default EarlyAccess;
