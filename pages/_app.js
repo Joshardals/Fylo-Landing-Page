@@ -1,5 +1,10 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import "tailwindcss/tailwind.css";
+config.autoAddCss = false;
+
+
 
 const GlobalStyle = createGlobalStyle`
 
@@ -62,7 +67,11 @@ const GlobalStyle = createGlobalStyle`
   button:hover {
     background: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
   }
-
+  .highlight:hover {
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);  
+    transition: all 0.3s ease-in;  
+  }
 `;
 
 function MyApp({ Component, pageProps }) {

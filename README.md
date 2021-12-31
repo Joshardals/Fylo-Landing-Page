@@ -60,10 +60,10 @@ What next after this project? Well, it's to keep building more projects on Front
 
 ### Useful Resources
 
-- [Example resource 1](https://www.example.com) - I used this as a guide while setting up styled-components in Next JS. I Recommend this to anyone finding it difficult setting up styled-components in Next JS.
+- [Example resource 1](https://styled-components.com/docs/advanced) - I used this as a guide while setting up styled-components in Next JS. I recommend this to anyone finding it difficult to set up styled-components in Next JS.
 
 ## Author
 
-- Github - [Joshardals] (https://github.com/Joshardals)
+- Github - [@Joshardals] (https://github.com/Joshardals/)
 - Frontend Mentor - [@joshardals](https://www.frontendmentor.io/profile/)
 - Twitter - [@Joshardals](https://www.twitter.com/joshardals)
