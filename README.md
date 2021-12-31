@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![/screenshots/desktop-home.png](/screenshots/desktop-home.png)
+![Desktop](screenshots/desktop-home.png)
 ![Mobile](./screenshots/mobile_screenshot.png)
 ![Mobile](./screenshots/mobile_screenshot2.png)
 
