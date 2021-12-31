@@ -27,14 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](/screenshots/desktop-home.png)
+![/screenshots/desktop-home.png](/screenshots/desktop-home.png)
 ![Mobile](./screenshots/mobile_screenshot.png)
 ![Mobile](./screenshots/mobile_screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://fylo-landing-page-sandy.vercel.app/)
-- Live Site URL: [Add live site URL here](https://fylo-landing-page-sandy.vercel.app/)
+- Solution URL: [https://fylo-landing-page-sandy.vercel.app/](https://fylo-landing-page-sandy.vercel.app/)
+- Live Site URL: [https://fylo-landing-page-sandy.vercel.app/](https://fylo-landing-page-sandy.vercel.app/)
 
 ## My process
 
@@ -65,5 +65,5 @@ What next after this project? Well, it's to keep building more projects on Front
 ## Author
 
 - Github - [@Joshardals] (https://github.com/Joshardals/)
-- Frontend Mentor - [@joshardals](https://www.frontendmentor.io/profile/)
+- Frontend Mentor - [@joshardals](https://www.frontendmentor.io/profile/Joshardals)
 - Twitter - [@Joshardals](https://www.twitter.com/joshardals)
