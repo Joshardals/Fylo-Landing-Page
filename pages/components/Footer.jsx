@@ -4,10 +4,13 @@ import styled from "styled-components";
 import EarlyAccess from "./EarlyAccess";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
-import Zoom from "react-reveal/Zoom"; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-
+import Zoom from "react-reveal/Zoom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -42,7 +45,7 @@ const Footer = () => {
             </Fade>
           </ReachMe>
           <Zoom>
-          <About>
+            <About>
               <NavContainer>
                 <NavLink href="#">About Us</NavLink>
                 <NavLink href="#">Jobs</NavLink>
@@ -55,14 +58,29 @@ const Footer = () => {
                 <NavLink href="#">Privacy</NavLink>
               </NavContainer>
               <SocialsContainer>
-                <SocialLink href="https://web.facebook.com/joshardals/" target="_blank" rel="noopener noreferrer"  className="highlight">
-                  <FontAwesomeIcon icon={faFacebook}/>
+                <SocialLink
+                  href="https://web.facebook.com/joshardals/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="highlight"
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
                 </SocialLink>
-                <SocialLink href="https://www.twitter.com/joshardals" target="_blank" rel="noopener noreferrer" className="highlight">
-                  <FontAwesomeIcon icon={faTwitter}/>
+                <SocialLink
+                  href="https://www.twitter.com/joshardals"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="highlight"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
                 </SocialLink>
-                <SocialLink href="https://www.instagram.com/joshardals/" target="_blank" rel="noopener noreferrer" className="highlight">
-                  <FontAwesomeIcon icon={faInstagram}/>
+                <SocialLink
+                  href="https://www.instagram.com/joshardals/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="highlight"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
                 </SocialLink>
               </SocialsContainer>
             </About>
@@ -71,9 +89,15 @@ const Footer = () => {
       </FooterContainer>
       <EarlyAccess />
       <Author>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
         <br />
-        Coded by <a href="https://www.frontendmentor.io/profile/Joshardals">Joshua Bamidele</a>.
+        Coded by{" "}
+        <a href="https://www.frontendmentor.io/profile/Joshardals">
+          Joshua Bamidele
+        </a>
       </Author>
     </Wrapper>
   );
@@ -131,5 +155,5 @@ const SocialLink = tw.a`
 `;
 const Author = tw.div`
   text-center
-`; 
+`;
 export default Footer;

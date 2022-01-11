@@ -1,6 +1,6 @@
- Frontend Mentor - Fylo dark theme landing page solution
+Frontend Mentor - Fylo dark theme landing page solution
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](screenshots/desktop-home.png)
-![Mobile](./screenshots/mobile_screenshot.png)
-![Mobile](./screenshots/mobile_screenshot2.png)
+![Desktop](./public/screenshots/desktop-home.png)
+![Mobile](./public/screenshots/mobile_screenshot.png)
+![Mobile](./public/screenshots/mobile_screenshot2.png)
 
 ### Links
 
